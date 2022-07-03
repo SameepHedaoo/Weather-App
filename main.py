@@ -1,10 +1,10 @@
 import tkinter as tk
-import requests
 import bs4
 import json
+import requests
+from decouple import config
 #Sameep Hedaoo
 app = tk.Tk()
-
 app.title("Weather App")
 app.geometry("500x500")
 app.resizable(False, False)
@@ -21,10 +21,12 @@ text2.set("......")
 text3.set("......")
 text4.set(".............................")
 
+Key = config('API_KEY')
+
 
 def get_weather():
     city = box1.get()
-    url = 'https://api.openweathermap.org/data/2.5/weather?q='+ city + '&appid=969f7ea6ed4e2eedb0cdf8f5a2ca894a'
+    url = 'https://api.openweathermap.org/data/2.5/weather?q='+ city + '&appid='+Key
     print(url)
     html = requests.get(url)
     hameep = bs4.BeautifulSoup(html.text, "html.parser")
