@@ -33,7 +33,7 @@ def get_weather():
     temp = data["main"]["temp"] - 273.15
     hum = data["main"]["humidity"]
     wind_speed = data["wind"]["speed"]
-    desc = data["weather"][0]["main"]
+    desc = data["weather"][0]["description"]
     weather_stat = data["weather"][0]["main"]
     weather_stat.lower()
 
