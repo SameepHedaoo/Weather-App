@@ -29,7 +29,4 @@ pip install tk pillow
 ```
 ##### Step 4) Open main.py in Visual Studio code and Click Run.
 
-
-<h1 align="center">Thank You</h1>
-
 ***
