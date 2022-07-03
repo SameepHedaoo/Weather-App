@@ -1,8 +1,8 @@
 <div align="center">
-  <h1 align="center"><img align="center" src="./images/cloudy.png" alt="Error 404" height="80"> Calculator</h1>
+  <h1 align="center"><img align="center" src="./images/cloudy.png" alt="Error 404" height="80"> Weather-App</h1>
 </div>
 
-## About Calculator:
+## About Weather-App:
 This is an Weather Application made in Python using Tkinter library.
 
 ## Screen Shots:
